@@ -43,6 +43,8 @@
                 <!-- <a href="data/JonBarron-bio.txt">Biography</a> &nbsp/&nbsp -->
                 <a href="https://scholar.google.com/citations?user=xBH73TYAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
                 <a href="https://www.linkedin.com/in/john-co-reyes-b3202366"> LinkedIn </a>
+                </a> &nbsp/&nbsp
+                <a href="https://github.com/jcoreyes"> Github </a>
               </p>
             </td>
             <td width="33%">
@@ -61,6 +63,47 @@
           </tr>
         </table>
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr onmouseout="porlight_stop()" onmouseover="porlight_start()">
+            <td width="25%">
+              <div class="one">
+                <div class="two" id='porlight_image'>
+                <img src='images/overview_hmm.png'; style='height: 100%; width: 100%; object-fit: contain' ></div>
+                <img src='images/overview_hmm.png'; style='height: 100%; width: 100%; object-fit: contain'>
+              </div>
+              <script type="text/javascript">
+                function porlight_start() {
+                  document.getElementById('porlight_image').style.opacity = "1";
+                }
+
+                function porlight_stop() {
+                  document.getElementById('porlight_image').style.opacity = "0";
+                }
+                porlight_stop()
+              </script>
+            </td>
+
+            <td valign="middle" width="75%">
+              <a href="">
+                <papertitle>Discovering, Predicing, and Planning with Objects</papertitle>
+              </a>
+              <br>
+              <strong>John D. Co-Reyes*</strong>,
+              <a href="https://people.eecs.berkeley.edu/~abhigupta/">Rishi Veerapaneni*</a>,
+              <a href="http://mbchang.github.io/">Michael Chang*</a>,
+              <a href="https://people.eecs.berkeley.edu/~janner/">Michael Janner</a>,
+              <a href="http://people.eecs.berkeley.edu/~cbfinn/">Chelsea Finn</a>,
+              <a href="https://jiajunwu.com/">Jiajun Wu</a>,
+              <a href="https://web.mit.edu/cocosci/josh.html">Josh Tenenbaum</a>,
+              <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>
+              <br>
+              <em>Workshop on Generative Modeling and Model-Based Reasoning for Robotics and AI at ICML</em>, 2019
+              <br>
+              <a href="">project page</a> 
+              <br>
+              <p></p>
+              <p>We introduce a framework for model-based planning that predicts and plans with learned object representations without supervision. The key idea behind our approach is to frame model-based planning under the language of a factorized HMM that processes a set of hidden states independently and symmetrically. This approach gives us permutation invariance, order invariance, and count equivariance by collapsing the combinatorial complexity along the object dimension. We show on a combinatorially complex block-stacking task that we are able to achieve almost three times the accuracy of a non-factorized model and achieve comparable performance to an oracle model that assumes access to object segmentations.</p>
+            </td>
+          </tr>
 
           <tr onmouseout="porlight_stop()" onmouseover="porlight_start()">
             <td width="25%">
@@ -95,7 +138,7 @@
               <br>
               <em>International Conference on Learning Representations</em>, 2019
               <br>
-              <em>Best Paper at NeurIPS Meta-Learning Workshop</em>, 2018
+              <em>Best Paper at Meta-Learning Workshop at NeurIPS</em>, 2018
               <br>
               <a href="https://sites.google.com/view/lgpl">project page</a> /
               <a href="data/LanguageCorrections_Poster_Final.pdf">poster</a> /

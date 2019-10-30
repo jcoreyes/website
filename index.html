@@ -83,25 +83,25 @@
             </td>
 
             <td valign="middle" width="75%">
-              <a href="">
-                <papertitle>Discovering, Predicing, and Planning with Objects</papertitle>
+              <a href="https://arxiv.org/abs/1910.12827">
+                <papertitle>Entity Abstraction in Visual Model-Based Reinforcement Learning</papertitle>
               </a>
               <br>
+              <a href="https://www.linkedin.com/in/rishi-veerapaneni-308153133/">Rishi Veerapaneni*</a>,
               <strong>John D. Co-Reyes*</strong>,
-              <a href="https://people.eecs.berkeley.edu/~abhigupta/">Rishi Veerapaneni*</a>,
               <a href="http://mbchang.github.io/">Michael Chang*</a>,
               <a href="https://people.eecs.berkeley.edu/~janner/">Michael Janner</a>,
               <a href="http://people.eecs.berkeley.edu/~cbfinn/">Chelsea Finn</a>,
               <a href="https://jiajunwu.com/">Jiajun Wu</a>,
-              <a href="https://web.mit.edu/cocosci/josh.html">Josh Tenenbaum</a>,
+              <a href="https://web.mit.edu/cocosci/josh.html">Joshua B. Tenenbaum</a>,
               <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>
               <br>
-              <em>Workshop on Generative Modeling and Model-Based Reasoning for Robotics and AI at ICML</em>, 2019
+              <em>Conference on Robot Learning</em>, 2019
               <br>
-              <a href="">project page</a> 
+              <a href="https://sites.google.com/view/op3website/">project page</a> 
               <br>
               <p></p>
-              <p>We introduce a framework for model-based planning that predicts and plans with learned object representations without supervision. The key idea behind our approach is to frame model-based planning under the language of a factorized HMM that processes a set of hidden states independently and symmetrically. This approach gives us permutation invariance, order invariance, and count equivariance by collapsing the combinatorial complexity along the object dimension. We show on a combinatorially complex block-stacking task that we are able to achieve almost three times the accuracy of a non-factorized model and achieve comparable performance to an oracle model that assumes access to object segmentations.</p>
+              <p>We test the hypothesis that modeling a scene in terms of entities and their local interactions, as opposed to modeling the scene globally, provides a significant benefit in generalizing to physical tasks in a combinatorial space the learner has not encountered before. We present object-centric perception, prediction, and planning (OP3), which to the best of our knowledge is the first entity-centric dynamic latent variable framework for model-based reinforcement learning that acquires entity representations from raw visual observations without supervision and uses them to predict and plan. OP3 enforces entity-abstraction -- symmetric processing of each entity representation with the same locally-scoped function -- which enables it to scale to model different numbers and configurations of objects from those in training. Our approach to solving the key technical challenge of grounding these entity representations to actual objects in the environment is to frame this variable binding problem as an inference problem, and we developing an interactive inference algorithm that uses temporal continuity and interactive feedback to bind information about object properties to the entity variables. On block-stacking tasks, OP3 generalizes to novel block configurations and more objects than observed during training, outperforming an oracle model that assumes access to object supervision and achieving two to three times better accuracy than a state-of-the-art video prediction model.</p>
             </td>
           </tr>
 
@@ -230,7 +230,8 @@
               <br>
               <a href="https://sites.google.com/view/ex2exploration">project page</a> /
               <a href="https://github.com/jcoreyes/ex2">code</a> /
-              <a href="data/EX2+Poster_Landscape.pdf">poster</a> 
+              <a href="data/EX2+Poster_Landscape.pdf">poster</a> /
+              <a href="data/SectarOral.pdf">conference slides</a> 
               
               <br>
               <p></p>
@@ -271,7 +272,7 @@
         </td>
       </tr>
       </tbody></table>
-      
+
       </td>
     </tr>
   </table>

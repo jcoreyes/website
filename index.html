@@ -57,18 +57,58 @@
             <td width="100%" valign="middle">
               <heading>Research</heading>
               <p>
-                My long-term goal is help build general AI and use that to accelerate research in other fields. I'm interested in combining deep learning with reinforcement learning in order to solve complex decision making problems. Areas of interest include computer vision, representation learning, and natural language processing all at the intersection with control and reinforcement learning in order to build complex autonomous agents that can understand the world, learn from previous behavior, and operate intelligently with humans.
+                My long-term goal is help build general AI and use that to accelerate research in other fields. I'm interested in combining deep learning with reinforcement learning in order to solve complex decision making problems. Areas of interest include computer vision, representation learning, and natural language processing all at the intersection with control and reinforcement learning in order to build complex autonomous agents that can understand the world, learn from previous behavior, and operate intelligently with humans. I'm currently interested in studying the emergence of intelligent behavior in complex environments with simple unsupervised learning objectives.
               </p>
             </td>
           </tr>
         </table>
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
+                  <tr onmouseout="porlight_stop()" onmouseover="porlight_start()">
+            <td width="25%">
+              <div class="one">
+                <div class="two" id='porlight_image'>
+                <img src='images/env_non_episodic_draft1.png'; style='height: 100%; width: 100%; object-fit: contain' ></div>
+                <img src='images/env_non_episodic_draft1.png'; style='height: 100%; width: 100%; object-fit: contain'>
+              </div>
+              <script type="text/javascript">
+                function porlight_start() {
+                  document.getElementById('porlight_image').style.opacity = "1";
+                }
+
+                function porlight_stop() {
+                  document.getElementById('porlight_image').style.opacity = "0";
+                }
+                porlight_stop()
+              </script>
+            </td>
+
+            <td valign="middle" width="75%">
+              <a href="">
+                <papertitle>Ecological Reinforcement Learning</papertitle>
+              </a>
+              <br>
+              <strong>John D. Co-Reyes*</strong>,
+              <a href="http://suvan.sh/">Suvansh Sanjeev*</a>,
+              <a href="https://people.eecs.berkeley.edu/~gberseth/">Glen Berseth</a>,
+              <a href="https://people.eecs.berkeley.edu/~abhigupta/">Abhishek Gupta</a>,
+              <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>
+              <br>
+              <em>Deep Reinforcement Learning Workshop at NeurIPS</em>, 2019
+              <br>
+              <a href="https://sites.google.com/view/ecological-rl/">project page</a>
+              <br>
+              <p></p>
+              <p>Reinforcement learning algorithms have been shown to effectively learn tasks in a variety of static, deterministic, and  simplistic environments, but their application to environments which are characteristic of dynamic lifelong settings encountered in the real world has been limited. Understanding the impact of specific environmental properties on the learning dynamics of reinforcement learning algorithms is important as we want to align the environments in which we develop our algorithms with the real world, and this is strongly coupled with the type of intelligence which can be learned. In this work, we study what we refer to as ecological reinforcement learning: the interaction between properties of the environment and the reinforcement learning agent. To this end, we introduce environments with characteristics that we argue better reflect natural environments: non-episodic learning, uninformative ``fundamental drive'' reward signals, and natural dynamics that cause the environment to change even when the agent fails to take intelligent actions. We show these factors can have a profound effect on the learning progress of reinforcement learning algorithms. Surprisingly, we find that these seemingly more challenging learning conditions can often make reinforcement learning agents learn more effectively. Through this study, we hope to shift the focus of the community towards learning in realistic, natural environments with dynamic elements..</p>
+            </td>
+          </tr>
+
           <tr onmouseout="porlight_stop()" onmouseover="porlight_start()">
             <td width="25%">
               <div class="one">
                 <div class="two" id='porlight_image'>
-                <img src='images/overview_hmm.png'; style='height: 100%; width: 100%; object-fit: contain' ></div>
-                <img src='images/overview_hmm.png'; style='height: 100%; width: 100%; object-fit: contain'>
+                <img src='images/double-bridge-close-topfar_3.gif'; style='height: 100%; width: 100%; object-fit: contain' ></div>
+                <img src='images/double-bridge-close-topfar_3.gif'; style='height: 100%; width: 100%; object-fit: contain'>
               </div>
               <script type="text/javascript">
                 function porlight_start() {
@@ -98,7 +138,8 @@
               <br>
               <em>Conference on Robot Learning</em>, 2019
               <br>
-              <a href="https://sites.google.com/view/op3website/">project page</a> 
+              <a href="https://sites.google.com/view/op3website/">project page</a> /
+              <a href="data/CoRL_2019_OP3_Poster.pdf">poster</a> 
               <br>
               <p></p>
               <p>We test the hypothesis that modeling a scene in terms of entities and their local interactions, as opposed to modeling the scene globally, provides a significant benefit in generalizing to physical tasks in a combinatorial space the learner has not encountered before. We present object-centric perception, prediction, and planning (OP3), which to the best of our knowledge is the first entity-centric dynamic latent variable framework for model-based reinforcement learning that acquires entity representations from raw visual observations without supervision and uses them to predict and plan. OP3 enforces entity-abstraction -- symmetric processing of each entity representation with the same locally-scoped function -- which enables it to scale to model different numbers and configurations of objects from those in training. Our approach to solving the key technical challenge of grounding these entity representations to actual objects in the environment is to frame this variable binding problem as an inference problem, and we developing an interactive inference algorithm that uses temporal continuity and interactive feedback to bind information about object properties to the entity variables. On block-stacking tasks, OP3 generalizes to novel block configurations and more objects than observed during training, outperforming an oracle model that assumes access to object supervision and achieving two to three times better accuracy than a state-of-the-art video prediction model.</p>
@@ -130,7 +171,8 @@
               </a>
               <br>
               <strong>John D. Co-Reyes</strong>,
-              <a href="https://people.eecs.berkeley.edu/~abhigupta/">Abhishek Gupta</a>, Suvansh Sanjeev,
+              <a href="https://people.eecs.berkeley.edu/~abhigupta/">Abhishek Gupta</a>, 
+              <a href="http://suvan.sh/">Suvansh Sanjeev</a>, 
               <a href="https://www.stat.berkeley.edu/~yugroup/people/Nicholas.html">Nick Altieri</a>,
               <a href="http://web.mit.edu/jda/www/">Jacob Andreas</a>,
               <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a>

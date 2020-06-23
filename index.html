@@ -3,17 +3,16 @@
 
 <head>
   <!-- Please delete this script if you use this HTML. -->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-7580334-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151523601-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'UA-7580334-1');
-  </script>
+  gtag('config', 'UA-151523601-1');
+</script>
+
   <meta name="viewport" content="width=500">
   <link href="stylesheet.css" rel="stylesheet" type="text/css">
   <link rel="icon" type="image/png" href="images/seal_icon.png">
@@ -84,7 +83,7 @@
             </td>
 
             <td valign="middle" width="75%">
-              <a href="">
+              <a href="https://arxiv.org/abs/2006.12478">
                 <papertitle>Ecological Reinforcement Learning</papertitle>
               </a>
               <br>
@@ -94,12 +93,13 @@
               <a href="https://people.eecs.berkeley.edu/~abhigupta/">Abhishek Gupta</a>,
               <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>
               <br>
-              <em>Deep Reinforcement Learning Workshop at NeurIPS</em>, 2019
+              <em>Preprint</em>, 2020
               <br>
-              <a href="https://sites.google.com/view/ecological-rl/">project page</a>
+              <a href="https://sites.google.com/view/ecological-rl/">project page</a> /
+              <a href="https://github.com/jcoreyes/ecologicalrl">code</a> 
               <br>
               <p></p>
-              <p>Reinforcement learning algorithms have been shown to effectively learn tasks in a variety of static, deterministic, and  simplistic environments, but their application to environments which are characteristic of dynamic lifelong settings encountered in the real world has been limited. Understanding the impact of specific environmental properties on the learning dynamics of reinforcement learning algorithms is important as we want to align the environments in which we develop our algorithms with the real world, and this is strongly coupled with the type of intelligence which can be learned. In this work, we study what we refer to as ecological reinforcement learning: the interaction between properties of the environment and the reinforcement learning agent. To this end, we introduce environments with characteristics that we argue better reflect natural environments: non-episodic learning, uninformative ``fundamental drive'' reward signals, and natural dynamics that cause the environment to change even when the agent fails to take intelligent actions. We show these factors can have a profound effect on the learning progress of reinforcement learning algorithms. Surprisingly, we find that these seemingly more challenging learning conditions can often make reinforcement learning agents learn more effectively. Through this study, we hope to shift the focus of the community towards learning in realistic, natural environments with dynamic elements..</p>
+              <p>Much of the current work on reinforcement learning studies episodic settings, where the agent is reset between trials to an initial state distribution, often with well-shaped reward functions. Non-episodic settings, where the agent must learn through continuous interaction with the world without resets, and where the agent receives only delayed and sparse reward signals, is substantially more difficult, but arguably more realistic since real-world environments do not present the learner with a convenient ``reset mechanism" and easy reward shaping. In this paper, instead of studying algorithmic improvements that can address such non-episodic and sparse reward settings, we instead study the kinds of environment properties that can make learning under such conditions easier. Understanding how properties of the environment impact the performance of reinforcement learning agents can help us to structure our tasks in ways that make learning tractable. We first discuss what we term ``environment shaping" -- modifications to the environment that provide an alternative to reward shaping, and may be easier to implement. We then discuss an even simpler property that we refer to as ``dynamism," which describes the degree to which the environment changes independent of the agent's actions and can be measured by environment transition entropy. Surprisingly, we find that even this property can substantially alleviate the challenges associated with non-episodic RL in sparse reward settings. We provide an empirical evaluation on a set of new tasks focused on non-episodic learning with sparse rewards. Through this study, we hope to shift the focus of the community towards analyzing how properties of the environment can affect learning and the ultimate type of behavior that is learned via RL.</p>
             </td>
           </tr>
 
@@ -139,6 +139,7 @@
               <em>Conference on Robot Learning</em>, 2019
               <br>
               <a href="https://sites.google.com/view/op3website/">project page</a> /
+              <a href="https://github.com/jcoreyes/OP3/">code</a> /
               <a href="data/CoRL_2019_OP3_Poster.pdf">poster</a> 
               <br>
               <p></p>
